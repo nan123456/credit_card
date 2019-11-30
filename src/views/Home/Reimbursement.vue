@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
     <div>
         <NavBar :navbartitle="title"></NavBar>
         
@@ -33,6 +34,14 @@ export default {
             title: "个人收款"
         }
     },
+=======
+    <NavBar :navbartitle="我要还款"></NavBar>
+</template>
+<script>
+import NavBar from "../../components/PublicComponent/NavBar";
+export default {
+    name:'Reimbursement',
+>>>>>>> parent of 49f77d5... TabBer
     components: {
         NavBar
     },
@@ -95,5 +104,6 @@ export default {
     margin-top: 51px;
     background:linear-gradient(90deg,rgba(35,134,255,1),rgba(44,178,252,1));
     border-radius:10px;
+    
 }
 </style>

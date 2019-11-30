@@ -1,25 +1,34 @@
 <template>
+<<<<<<< HEAD
     <div>
         <van-nav-bar class="title" :title="navbartitle"  left-arrow></van-nav-bar>
         <div class="shadow"></div>
     </div>
    
+=======
+    <van-nav-bar title="navtitle" left-text="返回" left-arrow>
+        <van-icon name="search" slot="right" />
+    </van-nav-bar>
+>>>>>>> parent of 49f77d5... TabBer
 </template>
 <script>
 export default {
     name:"NavBar",
-    props:['navbartitle'],
+    prop: {
+        navbartitle: String
+    },
     data(){
         return{
-           
+            navtitle: this.navbartitle, //currentIndex接收父组件传来的activeIndex值；
         }
     },
     created(){
-        // console.log(this.navbartitle)
+        console.log(this.navbartitle)
     }
 }
 </script>
 <style scoped>
+<<<<<<< HEAD
 .van-nav-bar__title{
     font-size:17px;
     font-family:PingFang SC;
@@ -35,4 +44,7 @@ export default {
     height:30px;
     background-image: linear-gradient(#F1F1F1, #ffffff);
 }
+=======
+
+>>>>>>> parent of 49f77d5... TabBer
 </style>
