@@ -1,24 +1,30 @@
 <template>
-    <van-nav-bar title="navtitle" left-text="返回" left-arrow>
-        <van-icon name="search" slot="right" />
+    <van-nav-bar class="title" :title="navbartitle"  left-arrow>
     </van-nav-bar>
 </template>
 <script>
 export default {
     name:"NavBar",
-    prop: {
-        navbartitle: String
-    },
+    props:['navbartitle'],
     data(){
         return{
-            navtitle: this.navbartitle, //currentIndex接收父组件传来的activeIndex值；
+           
         }
     },
     created(){
-        console.log(this.navbartitle)
+        // console.log(this.navbartitle)
     }
 }
 </script>
 <style scoped>
-
+.van-nav-bar__title{
+    font-size:17px;
+    font-family:PingFang SC;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+}
+.van-nav-bar .van-icon {
+    color: rgba(153,153,153,1);
+    vertical-align: middle;
+}
 </style>
