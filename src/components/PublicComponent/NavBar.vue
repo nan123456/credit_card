@@ -1,6 +1,9 @@
 <template>
-    <van-nav-bar class="title" :title="navbartitle"  left-arrow>
-    </van-nav-bar>
+    <div>
+        <van-nav-bar class="title" :title="navbartitle"  left-arrow></van-nav-bar>
+        <div class="shadow"></div>
+    </div>
+   
 </template>
 <script>
 export default {
@@ -26,5 +29,10 @@ export default {
 .van-nav-bar .van-icon {
     color: rgba(153,153,153,1);
     vertical-align: middle;
+}
+.shadow{
+    width:375px;
+    height:30px;
+    background-image: linear-gradient(#F1F1F1, #ffffff);
 }
 </style>
