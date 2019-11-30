@@ -1,0 +1,47 @@
+warning: LF will be replaced by CRLF in src/router/index.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/views/Home.vue.
+The file will have its original line endings in your working directory
+[1mdiff --git a/src/router/index.js b/src/router/index.js[m
+[1mindex a1898de..ad988da 100644[m
+[1m--- a/src/router/index.js[m
+[1m+++ b/src/router/index.js[m
+[36m@@ -9,14 +9,6 @@[m [mconst routes = [[m
+     path: '/',[m
+     name: 'home',[m
+     component: Home[m
+[31m-  },[m
+[31m-  {[m
+[31m-    path: '/about',[m
+[31m-    name: 'about',[m
+[31m-    // route level code-splitting[m
+[31m-    // this generates a separate chunk (about.[hash].js) for this route[m
+[31m-    // which is lazy-loaded when the route is visited.[m
+[31m-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')[m
+   }[m
+ ][m
+ [m
+[1mdiff --git a/src/views/Home.vue b/src/views/Home.vue[m
+[1mindex fc2e940..40042b0 100644[m
+[1m--- a/src/views/Home.vue[m
+[1m+++ b/src/views/Home.vue[m
+[36m@@ -1,18 +1,12 @@[m
+ <template>[m
+   <div class="home">[m
+     <img alt="Vue logo" src="../assets/logo.png">[m
+[31m-    <HelloWorld msg="Welcome to Your Vue.js App"/>[m
+   </div>[m
+ </template>[m
+ [m
+ <script>[m
+[31m-// @ is an alias to /src[m
+[31m-import HelloWorld from '@/components/HelloWorld.vue'[m
+ [m
+ export default {[m
+[31m-  name: 'home',[m
+[31m-  components: {[m
+[31m-    HelloWorld[m
+[31m-  }[m
+[32m+[m[32m  name: 'home'[m
+ }[m
+ </script>[m
