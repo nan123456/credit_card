@@ -4,13 +4,15 @@ import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
-const routes = [
-  {
+const routes = [{
     path: '/',
     name: 'home',
     component: Home
-  }
-]
+  },{
+    path: "/reimbursement",
+    name: "reimbursement",
+    component: () => import("../views/Home/Reimbursement.vue")
+  }]
 
 const router = new VueRouter({
   mode: 'history',
